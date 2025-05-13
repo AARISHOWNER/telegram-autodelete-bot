@@ -1,0 +1,14 @@
+
+services:
+  - type: web
+    name: telegram-autodelete-bot
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7403324708:AAG76th51acm-Ffe4QZtDuBjpFW34WaDBUc  # Replace with your bot token
+      - key: CHANNEL_ID
+        value: -1002090849773  # Replace with your channel ID
